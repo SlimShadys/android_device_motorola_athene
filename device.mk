@@ -252,8 +252,7 @@ PRODUCT_PACKAGES += \
 
 # Perf
 PRODUCT_BOOT_JARS += \
-    QPerformance \
-    UxPerformance
+    QPerformance
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/perf/commonresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/commonresourceconfigs.xml \
