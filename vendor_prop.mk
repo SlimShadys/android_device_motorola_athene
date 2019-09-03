@@ -53,7 +53,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	vendor.qcom.bluetooth.soc=pronto \
 	ro.bluetooth.hfp.ver=1.7 \
 	ro.qualcomm.bt.hci_transport=smd \
-	persist.bt.enableAptXHD=true
+	persist.bt.enableAptXHD=true \
+	persist.bluetooth.bluetooth_audio_hal.disabled=true
 
 # CABL
 PRODUCT_PROPERTY_OVERRIDES += \
