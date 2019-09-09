@@ -108,8 +108,8 @@ QCOM_BT_READ_ADDR_FROM_PROP := true
 BOARD_QTI_CAMERA_32BIT_ONLY := true
 USE_DEVICE_SPECIFIC_CAMERA := true
 TARGET_PROCESS_SDK_VERSION_OVERRIDE := \
-    /system/vendor/bin/hw/motorola.hardware.camera.provider@2.4-service=23 \
-    /system/vendor/bin/mm-qcamera-daemon=23
+    /vendor/bin/hw/motorola.hardware.camera.provider@2.4-service=23 \
+    /vendor/bin/mm-qcamera-daemon=23
 
 # Display
 BOARD_USES_ADRENO := true
@@ -146,8 +146,9 @@ TARGET_QCOM_NO_FM_FIRMWARE := true
 
 # Shims
 TARGET_LD_SHIM_LIBS := \
-    /vendor/lib64/lib-imsvt.so|libshims_ims.so \
-    /vendor/lib/hw/camera.msm8952.so|libshims_camera.so
+    /system/vendor/lib64/lib-imsvt.so|libshims_ims.so \
+    /system/vendor/lib/hw/camera.msm8952.so|libshims_camera.so \
+    /system/vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|libshims_bt.so
 
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_athene
